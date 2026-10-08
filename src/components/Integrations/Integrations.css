@@ -1,0 +1,291 @@
+/* ============================= */
+/* INTEGRATIONS SECTION */
+/* ============================= */
+
+.integrations {
+  width: 100%;
+  padding: 110px 0;
+  background: #f8f9ff;
+}
+
+.integrations-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+.integrations-heading {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.integrations-heading .section-badge {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border: 1px solid #ddd9ff;
+  border-radius: 30px;
+
+  background: #eeecff;
+  color: #635bff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.integrations-heading h2 {
+  margin: 20px 0 18px;
+
+  color: #111827;
+
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+}
+
+.integrations-heading h2 span {
+  color: #635bff;
+}
+
+.integrations-heading p {
+  max-width: 620px;
+  margin: auto;
+
+  color: #73798a;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* INTEGRATION CARDS */
+/* ============================= */
+
+.integrations-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.integration-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 17px;
+
+  padding: 24px;
+
+  border: 1px solid #e7e7ef;
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow: 0 8px 30px rgba(30, 30, 60, 0.03);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.integration-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d7d3ff;
+
+  box-shadow: 0 18px 45px rgba(40, 35, 100, 0.08);
+}
+
+/* ============================= */
+/* INTEGRATION ICON */
+/* ============================= */
+
+.integration-icon {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #f0efff;
+  color: #635bff;
+
+  font-size: 21px;
+  font-weight: 800;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.integration-card:hover .integration-icon {
+  background: #635bff;
+  color: #ffffff;
+
+  transform: scale(1.06);
+}
+
+/* ============================= */
+/* INTEGRATION INFO */
+/* ============================= */
+
+.integration-info {
+  padding-right: 25px;
+}
+
+.integration-info h3 {
+  margin-bottom: 6px;
+
+  color: #171923;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.integration-info p {
+  color: #7a8090;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* ARROW */
+/* ============================= */
+
+.integration-arrow {
+  position: absolute;
+
+  top: 22px;
+  right: 20px;
+
+  color: #a0a4b1;
+
+  font-size: 17px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.integration-card:hover .integration-arrow {
+  color: #635bff;
+
+  transform: translate(2px, -2px);
+}
+
+/* ============================= */
+/* BOTTOM */
+/* ============================= */
+
+.integration-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 45px;
+}
+
+.integration-bottom p {
+  color: #7a8090;
+
+  font-size: 14px;
+}
+
+.integration-bottom button {
+  border: none;
+
+  background: transparent;
+
+  color: #635bff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.integration-bottom button:hover {
+  color: #5048d8;
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .integrations {
+    padding: 80px 0;
+  }
+
+  .integrations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .integrations {
+    padding: 70px 0;
+  }
+
+  .integrations-container {
+    width: 92%;
+  }
+
+  .integrations-heading {
+    margin-bottom: 45px;
+  }
+
+  .integrations-heading h2 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+
+  .integrations-heading p {
+    font-size: 15px;
+  }
+
+  .integrations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .integration-card {
+    padding: 21px;
+  }
+
+  .integration-bottom {
+    flex-direction: column;
+
+    gap: 8px;
+
+    text-align: center;
+  }
+}

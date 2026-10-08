@@ -1,0 +1,254 @@
+/* ============================= */
+/* HOW IT WORKS */
+/* ============================= */
+
+.how-it-works {
+  width: 100%;
+  padding: 110px 0;
+  background: #f8f9ff;
+}
+
+.how-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+.how-heading {
+  max-width: 700px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.how-heading .section-badge {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border: 1px solid #ddd9ff;
+  border-radius: 30px;
+
+  background: #eeecff;
+  color: #635bff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.how-heading h2 {
+  margin: 20px 0 18px;
+
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+
+  color: #111827;
+}
+
+.how-heading h2 span {
+  color: #635bff;
+}
+
+.how-heading p {
+  max-width: 620px;
+  margin: auto;
+
+  color: #73798a;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* STEPS */
+/* ============================= */
+
+.steps-wrapper {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+}
+
+.step-item {
+  position: relative;
+
+  padding: 35px 30px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #e7e7ef;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 30px rgba(30, 30, 60, 0.03);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.step-item:hover {
+  transform: translateY(-7px);
+
+  border-color: #d8d5ff;
+
+  box-shadow: 0 20px 50px rgba(40, 35, 100, 0.1);
+}
+
+/* ============================= */
+/* STEP NUMBER */
+/* ============================= */
+
+.step-number {
+  margin-bottom: 20px;
+
+  color: #635bff;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+/* ============================= */
+/* STEP ICON */
+/* ============================= */
+
+.step-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #f0efff;
+  color: #635bff;
+
+  font-size: 27px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.step-item:hover .step-icon {
+  background: #635bff;
+  color: #ffffff;
+
+  transform: scale(1.06);
+}
+
+/* ============================= */
+/* STEP CONTENT */
+/* ============================= */
+
+.step-item h3 {
+  margin-bottom: 12px;
+
+  color: #171923;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.step-item p {
+  color: #73798a;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* CONNECTING LINE */
+/* ============================= */
+
+.step-line {
+  position: absolute;
+
+  top: 52%;
+  right: -35px;
+
+  width: 35px;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    #d8d6f5,
+    #635bff,
+    #d8d6f5
+  );
+
+  opacity: 0.7;
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .how-it-works {
+    padding: 80px 0;
+  }
+
+  .steps-wrapper {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    gap: 20px;
+  }
+
+  .step-line {
+    display: none;
+  }
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .how-it-works {
+    padding: 70px 0;
+  }
+
+  .how-container {
+    width: 92%;
+  }
+
+  .how-heading {
+    margin-bottom: 45px;
+  }
+
+  .how-heading h2 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+
+  .how-heading p {
+    font-size: 15px;
+  }
+
+  .step-item {
+    padding: 30px 25px;
+  }
+}

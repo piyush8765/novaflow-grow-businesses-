@@ -1,0 +1,258 @@
+/* ============================= */
+/* TESTIMONIALS SECTION */
+/* ============================= */
+
+.testimonials {
+  width: 100%;
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.testimonials-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+.testimonials-heading {
+  max-width: 700px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.testimonials-heading .section-badge {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border: 1px solid #ddd9ff;
+  border-radius: 30px;
+
+  background: #eeecff;
+  color: #635bff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.testimonials-heading h2 {
+  margin: 20px 0 18px;
+
+  color: #111827;
+
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+}
+
+.testimonials-heading h2 span {
+  color: #635bff;
+}
+
+.testimonials-heading p {
+  max-width: 620px;
+  margin: auto;
+
+  color: #73798a;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* TESTIMONIAL CARDS */
+/* ============================= */
+
+.testimonials-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.testimonial-card {
+  position: relative;
+
+  padding: 32px;
+
+  border: 1px solid #e8e8ef;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow: 0 8px 30px rgba(30, 30, 60, 0.03);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #d8d5ff;
+
+  box-shadow: 0 22px 55px rgba(40, 35, 100, 0.09);
+}
+
+/* ============================= */
+/* STARS */
+/* ============================= */
+
+.testimonial-stars {
+  margin-bottom: 22px;
+
+  color: #635bff;
+
+  font-size: 15px;
+
+  letter-spacing: 3px;
+}
+
+/* ============================= */
+/* QUOTE */
+/* ============================= */
+
+.testimonial-quote {
+  min-height: 120px;
+
+  margin-bottom: 28px;
+
+  color: #4d5363;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ============================= */
+/* USER */
+/* ============================= */
+
+.testimonial-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #eeeeF3;
+}
+
+/* ============================= */
+/* AVATAR */
+/* ============================= */
+
+.user-avatar {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ddd9ff;
+  border-radius: 50%;
+
+  background: #eeecff;
+  color: #635bff;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.testimonial-card:hover .user-avatar {
+  background: #635bff;
+  color: #ffffff;
+
+  transform: scale(1.05);
+}
+
+/* ============================= */
+/* USER DETAILS */
+/* ============================= */
+
+.testimonial-user h3 {
+  margin-bottom: 4px;
+
+  color: #171923;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.testimonial-user span {
+  color: #858a98;
+
+  font-size: 12px;
+}
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .testimonials {
+    padding: 80px 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    margin: auto;
+  }
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .testimonials {
+    padding: 70px 0;
+  }
+
+  .testimonials-container {
+    width: 92%;
+  }
+
+  .testimonials-heading {
+    margin-bottom: 45px;
+  }
+
+  .testimonials-heading h2 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+
+  .testimonials-heading p {
+    font-size: 15px;
+  }
+
+  .testimonial-card {
+    padding: 27px;
+  }
+
+  .testimonial-quote {
+    min-height: auto;
+  }
+}
